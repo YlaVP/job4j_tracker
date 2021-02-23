@@ -14,11 +14,14 @@ public class Cat {
         System.out.println("Cat is name " + name + ". " + " Cat is eating a " + food);
 
     }
+    public void eat(String meat) {
+        this.food = meat;
+    }
 
     public static void main(String[] args) {
         Cat cat = new Cat();
         cat.giveNick("Fofa");
-        cat.food = "сhicken";
+        cat.eat("сhicken");
         cat.show();
 
     }
