@@ -9,8 +9,8 @@ public class College {
         student.setGroup(2);
         student.setDate(10092020);
 
-        System.out.println("Student has a name, surname, patronyic - " + student.getName() + " " +  student.getSurname() + " " + student.getPatronyic() + " : "
-                + " group " + student.getGroup()  + " : " + " receipt date " + student.getDate());
+        System.out.println("Student has a name, surname, patronyic - " + student.getName() + " " + student.getPatronyic() + " " + student.getSurname()
+                + "\n Group: " + student.getGroup() + "\n Receipt date: " + student.getDate());
 
     }
 }
