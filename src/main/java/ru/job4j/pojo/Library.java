@@ -23,12 +23,12 @@ public class Library {
             System.out.println(bk.getName() + " " + bk.getNumberOfPages());
         }
         System.out.println("Shown only one book");
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
+        for (Book bk : books) {
+
             if (bk.getName().equals("Clean code")) {
                 System.out.println(bk.getName() + " " + bk.getNumberOfPages());
             }
-
         }
     }
 }
+
