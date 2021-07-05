@@ -11,15 +11,13 @@ public class Library {
         books[1] = book2;
         books[2] = book3;
         books[3] = book4;
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
+        for (Book bk : books) {
             System.out.println(bk.getName() + " " + bk.getNumberOfPages());
         }
         System.out.println("Swap books");
         books[0] = book4;
         books[3] = book1;
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
+        for (Book bk : books) {
             System.out.println(bk.getName() + " " + bk.getNumberOfPages());
         }
         System.out.println("Shown only one book");
