@@ -8,15 +8,16 @@ public class Shop {
         products[2] = new Product("Egg", 19);
 
     }
-              public static int indexOfNull(Product[] products){
-                int result = -1;
-                for (int i = 0; i < products.length; i++) {
-                    if (products[i] == null) {
-                        result = i;
-                        break;
-                    }
-                }
-                return result;
+
+    public static int indexOfNull(Product[] products) {
+        int result = -1;
+        for (int i = 0; i < products.length; i++) {
+            if (products[i] == null) {
+                result = i;
+                break;
+            }
+        }
+        return result;
 
     }
 
