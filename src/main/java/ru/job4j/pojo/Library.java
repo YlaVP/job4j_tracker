@@ -25,7 +25,7 @@ public class Library {
         System.out.println("Shown only one book");
         for (int index = 0; index < books.length; index++) {
             Book bk = books[index];
-            if (bk.equals(book4 = book1)) {
+            if (bk.getName().equals("Clean code")) {
                 System.out.println(bk.getName() + " " + bk.getNumberOfPages());
             }
 
