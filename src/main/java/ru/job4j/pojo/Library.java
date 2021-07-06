@@ -23,7 +23,7 @@ public class Library {
         System.out.println("Shown only one book");
         for (Book bk : books) {
 
-            if (bk.getName().equals("Clean code")) {
+            if ("Clean code".equals(bk.getName())) {
                 System.out.println(bk.getName() + " " + bk.getNumberOfPages());
             }
         }
