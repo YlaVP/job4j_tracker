@@ -3,7 +3,11 @@ package ru.job4j.tracker;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Formattable;
+import java.util.Formatter;
 import java.util.Objects;
+
+import static org.hibernate.type.LocalTimeType.FORMATTER;
 
 public class Item {
 
@@ -63,7 +67,13 @@ public class Item {
         return Objects.hash(id, name, created);
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", created=" + created.format(FORMATTER) +
+                '}';
+    }
 }
 
